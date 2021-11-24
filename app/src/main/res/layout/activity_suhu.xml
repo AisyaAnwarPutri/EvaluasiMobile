@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suhu"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="50sp"
+        android:backgroundTint="#A52A2A"
+        android:textColor="#A52A2A"
+        android:fontFamily="monospace"
+
+        android:paddingTop="20dp"
+        android:paddingRight="16dp"
+        android:text="Konversi Celcius"
+        android:paddingLeft="50sp"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="15dp"
+        android:text="Inputkan Nilai Celcius"
+        />
+
+    <EditText
+        android:id="@+id/edt_celcius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="15dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/celcius"
+        />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Cek Suhu"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_fahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="15dp"
+        android:textSize="16sp"
+        android:hint="Hasil Fahrenheit"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_reamur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="15dp"
+        android:textSize="16sp"
+        android:hint="Hasil Reamur"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_kelvin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="15dp"
+        android:textSize="16sp"
+        android:hint="Hasil Kelvin"
+        />
+
+</LinearLayout>
